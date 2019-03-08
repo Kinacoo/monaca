@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8"><!--文字コード-->
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+	<script src="seiza.js">
+		<!--<link rel="stylesheet" href="components/loader.css">-->
+    </script>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<!-- TODO: Please edit here -->
+	<center>
+		<table bgcolor="#c0ffee" cellspacing="5" cellpadding="5" width="310" height="625">
+			<tr>
+				<td style="border:3px solid white;">
+					<center>
+						<div id="output">
+							<font color="#DA81F5">
+								<h1>あなたの星座を<br>えらんでね</h1>
+							</font>
+
+							<font color="#ffffff">
+
+								<!--出力画面-->
+								<form id="outputArea" class="output-area" action="get" action="" name="resource">
+									<select id="seiza" name="seiza" onchange="chackValue()">
+										<option value="0">未選択</option>
+										<option value="1">おひつじ座(3/21~4/19)</option>
+										<option value="2">おうし座(4/20~5/20)</option>
+										<option value="3">ふたご座(5/21~6/21)</option>
+										<option value="4">かに座(6/22~7/22)</option>
+										<option value="5">しし座(7/23~8/22)</option>
+										<option value="6">おとめ座(8/23~9/22)</option>
+										<option value="7">てんびん座(9/23~10/23)</option>
+										<option value="8">さそり座(10/24~11/22)</option>
+										<option value="9">いて座(11/23~12/21)</option>
+										<option value="10">やぎ座(12/22~1/19)</option>
+										<option value="11">みずがめ座(1/20~2/18)</option>
+										<option value="12">うお座(2/19~3/20)</option>
+									</select>
+									<br>
+									<br>
+									<!--ボタン-->
+									<div class="btn">
+										<font color="#DA81F5">
+											<button id="btn" type="button" onclick="changeOutput()">結果</button>
+										</font>
+									</div>
+								</form>
+							</font>
+
+
+							<br>
+							<br>
+							<br>
+							<font color="#DA81F5">あなたの星座をえらんで<br>上のボタンをおしてね<br>今日の運勢がみられるよ<br>:.。..。.:*・゜*:.。..。.:*・゜*:.。..。.:*・゜*:.。..。.:*・゜*:.。..。.:*・゜*:.。..。.:*・゜*:.。..。.:*・゜*:.。..。.:*・゜*:.。..。.:*・゜*:.。..。.:*・゜*:.。..。.:*・゜
+							</font>
+						</div>
+						<font color="#DA81F5">
+							<div id="result" class="result">
+							<div class="float">
+										<p id="outputSeiza" class="outputSeizaLeft"></p>
+									<p class="outputSeizaRight"><span>の</span>あなたは</p>
+								</div>
+
+								<p id="outputMes"></p>
+
+
+								<div class="float">
+									<p class="itmeLeft">ラッキーアイテムは：</p>
+									<p id="outputItem" class="itemRight"></p>
+								</div>
+
+
+								<p><a href="index.html">トップへ</a></p>
+								<p><a href="seizaku.html">もう一回</a></p>
+
+							</div>
+						</font>
+
+					</center>
+				</td>
+			</tr>
+		</table>
+	</center>
+</body>
+
+</html>
